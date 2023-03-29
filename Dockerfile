@@ -68,8 +68,6 @@ EXPOSE 9161
 
 USER appuser
 
-ENTRYPOINT ["/oracledb_exporter"]
-
 FROM ianv88/oracledb_exporter:latest
 
 COPY custom-metrics.toml /
