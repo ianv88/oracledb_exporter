@@ -72,4 +72,4 @@ FROM ianv88/oracledb_exporter:latest
 
 COPY custom-metrics.toml /
 
-ENTRYPOINT ["/oracledb_exporter", "--custom.metrics", "/custom-metrics.toml"]
+ENTRYPOINT ["/oracledb_exporter", "--log.level debug", "--custom.metrics", "/custom-metrics.toml"]
